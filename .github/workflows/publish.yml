@@ -1,5 +1,10 @@
 name: Publish to Docker
 on:
+  workflow_dispatch:
+      inputs:
+        name:
+          description: "Publish docker image"
+          default: "Publish docker image"
   push:
     branches:
       - main
